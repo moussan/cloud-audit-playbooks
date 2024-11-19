@@ -35,9 +35,9 @@ A collection of Terraform configurations for auditing AWS, Azure, and GCP tenant
 
 6. 🛠 Customization
    Modify the variables.tf file in each playbook to specify:
-   - a.   Regions
-   - b.   Subscription/Project IDs
-   - c.   Specific resources of interest
+   - Regions
+   - Subscription/Project IDs
+   - Specific resources of interest
 
 7. **🛡 Security Considerations**
    Ensure the least-privileged permissions for Terraform's access to your cloud accounts. Audit results may contain sensitive information—handle them carefully.
