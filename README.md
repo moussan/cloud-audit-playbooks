@@ -17,3 +17,29 @@ A collection of Terraform configurations for auditing AWS, Azure, and GCP tenant
    ```bash
    git clone https://github.com/moussan/cloud-audit-playbooks.git
    cd cloud-audit-playbooks
+
+3. **Set Up Environment Variables:**
+
+   For AWS: Set up AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY.
+   For Azure: Set up ARM_SUBSCRIPTION_ID, ARM_CLIENT_ID, ARM_CLIENT_SECRET, and ARM_TENANT_ID.
+   For GCP: Set up GOOGLE_APPLICATION_CREDENTIALS with your service account key.
+
+4. **Run Terraform:**
+
+   bash
+   terraform init
+   terraform plan
+   terraform apply
+
+5. **📜 Outputs**
+Each playbook generates outputs summarizing the discovered resources in your cloud account.
+
+6. 🛠 Customization
+Modify the variables.tf file in each playbook to specify:
+
+7. **Regions**
+   Subscription/Project IDs
+   Specific resources of interest
+
+8. **🛡 Security Considerations**
+   Ensure the least-privileged permissions for Terraform's access to your cloud accounts. Audit results may contain sensitive information—handle them carefully.
