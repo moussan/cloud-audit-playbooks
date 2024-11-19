@@ -25,17 +25,16 @@ A collection of Terraform configurations for auditing AWS, Azure, and GCP tenant
    For GCP: Set up GOOGLE_APPLICATION_CREDENTIALS with your service account key.
 
 4. **Run Terraform:**
-
-   bash
+   ```bash
    terraform init
    terraform plan
    terraform apply
 
 5. **📜 Outputs**
-Each playbook generates outputs summarizing the discovered resources in your cloud account.
+   Each playbook generates outputs summarizing the discovered resources in your cloud account.
 
 6. 🛠 Customization
-Modify the variables.tf file in each playbook to specify:
+   Modify the variables.tf file in each playbook to specify:
 
 7. **Regions**
    Subscription/Project IDs
